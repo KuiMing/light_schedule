@@ -18,7 +18,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     if name:
         return func.HttpResponse(
-            f"Hello, {name}. This HTTP triggered function executed successfully.{res.status_code + 1000}"
+            f"Hello, {name}. This HTTP triggered function executed successfully.{res.status_code + 5000}"
         )
 
     return func.HttpResponse(
